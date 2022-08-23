@@ -5,7 +5,7 @@ const CartWidget = () =>
     return(
     <>
         <a className="navbar-brand" href="">
-          <img src={logo} alt="" width="30" height="30" className="d-inline-block align-text-top" />
+          <img src={logo} alt="" width="35" height="35" className="d-inline-block align-text-top" />
           Box Store
         </a>
     </>
