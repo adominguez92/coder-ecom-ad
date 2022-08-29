@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 
 const ItemCount = ({ini, stock, onAdd}) =>
 {
-    const [valor, setCount] = useState(ini);
+    const [valor, setValor] = useState(ini);
 
     const incremento = () =>
     {
         if(valor < stock)
         {
-            setCount(valor + 1) 
+            setValor(valor + 1) 
         }   
     }
 
@@ -16,7 +16,7 @@ const ItemCount = ({ini, stock, onAdd}) =>
     {
         if(valor > ini)
         {
-            setCount(valor - 1) 
+            setValor(valor - 1) 
         }       
     }
 
