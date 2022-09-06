@@ -1,17 +1,28 @@
 import itemCall  from "../utils/itemCall"
-import { itemData } from "../utils/itemData"
 import Item from "./Item";
 import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
+const { itemData } = require("../utils/itemData");
 
 const ItemList = () =>
 {
+    const {id} = useParams();
     const [product, setProduct] = useState([]);
     useEffect(() =>
     {
-        itemCall(itemData)
-            .then(result => setProduct(result))
-            .catch(err => console.log(err))
-    }, [])
+        if(id)
+        {
+            itemCall(itemData.filter(item => item.categoryId === id))
+                .then(result => setProduct(result))
+                .catch(err => console.log(err))    
+        }
+        else
+        {
+            itemCall(itemData)
+                .then(result => setProduct(result))
+                .catch(err => console.log(err))
+        }
+    }, [id])
 
     return(
         <>
@@ -20,6 +31,7 @@ const ItemList = () =>
             (  
                 <Item 
                     key = {item.id}
+                    id = {item.id}
                     name = {item.name}
                     stock = {item.stock}
                     cost = {item.cost}

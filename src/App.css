@@ -3,10 +3,24 @@
   padding: 0;
   box-sizing: border-box;
 }
+.imgContenedor{
+  height:300px;
+  width: 300px;
+}
 .imgPrueba
 {
-  max-width: 50%;
-  display: flex;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.grilla
+{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center
 }
 .App {
   text-align: center;

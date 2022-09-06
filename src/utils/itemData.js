@@ -1,6 +1,11 @@
 export const itemData = [
     {
         id:"1",
+        categoryId:"2",
+        category:{
+            name:"Electrico",
+            id:"2"
+        },
         name:"Pikachu",
         stock:"10",
         cost:"1600",
@@ -11,6 +16,11 @@ export const itemData = [
     },
     {
         id:"2",
+        categoryId:"6",
+        category:{
+            name:"Disfras",
+            id:"6"
+        },
         name:"Pikachu disfras",
         stock:"4",
         cost:"3000",
@@ -21,7 +31,12 @@ export const itemData = [
     },
     {
         id:"3",
-        name:"Eevee disfras",
+        categoryId:"1",
+        category:{
+            name:"Normal",
+            id:"1"
+        },
+        name:"Eevee",
         stock:"14",
         cost:"1600",
         description:"Peluche de Eevee",
@@ -31,6 +46,11 @@ export const itemData = [
     },
     {
         id:"4",
+        categoryId:"6",
+        category:{
+            name:"Disfras",
+            id:"6"
+        },
         name:"Eevee disfras",
         stock:"5",
         cost:"3000",
@@ -41,6 +61,11 @@ export const itemData = [
     },
     {
         id:"5",
+        categoryId:"1",
+        category:{
+            name:"Normal",
+            id:"1"
+        },
         name:"Snorlax",
         stock:"2",
         cost:"4500",
@@ -51,6 +76,11 @@ export const itemData = [
     },
     {
         id:"6",
+        categoryId:"3",
+        category:{
+            name:"Planta",
+            id:"3"
+        },
         name:"Bulbasaur",
         stock:"25",
         cost:"1000",
@@ -61,6 +91,11 @@ export const itemData = [
     },
     {
         id:"7",
+        categoryId:"4",
+        category:{
+            name:"Agua",
+            id:"4"
+        },
         name:"Squirtle",
         stock:"15",
         cost:"1000",
@@ -71,6 +106,11 @@ export const itemData = [
     },
     {
         id:"8",
+        categoryId:"5",
+        category:{
+            name:"Fuego",
+            id:"5"
+        },
         name:"Charmander",
         stock:"2",
         cost:"1000",
@@ -81,6 +121,11 @@ export const itemData = [
     },
     {
         id:"9",
+        categoryId:"5",
+        category:{
+            name:"Fuego",
+            id:"5"
+        },
         name:"Charizard Y",
         stock:"7",
         cost:"2200",
@@ -91,6 +136,11 @@ export const itemData = [
     },
     {
         id:"10",
+        categoryId:"5",
+        category:{
+            name:"Fuego",
+            id:"5"
+        },
         name:"Charizard X",
         stock:"3",
         cost:"2250",

@@ -7,7 +7,7 @@ let itemCall = (task) =>
         {
             setTimeout(() =>{
                 resolve(task)
-            },2000 );
+            },500 );
         }
         else {
             reject("Error")

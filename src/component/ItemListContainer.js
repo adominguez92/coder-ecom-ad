@@ -2,8 +2,10 @@ import ItemCount from "./ItemCount";
 import ItemList from "./ItemList"
 
 
-const ItemListContainer  = (props) => {
 
+const ItemListContainer  = () => {
+    
+    
     const onAdd = (info) =>
     {
         alert('En el carrito tengo esta cantidad de articulos: '+ info );
@@ -11,9 +13,10 @@ const ItemListContainer  = (props) => {
     
     return(
         <>
-            <h1>{props.saludo}</h1>
-            <ItemList />
-            <ItemCount ini={1} stock={5} onAdd={onAdd} />
+            <div className="grilla">
+                <ItemList />
+            </div>
+            <ItemCount ini={1} stock={5} onAdd={onAdd} />   
         </>
     );
 }

@@ -1,10 +1,11 @@
 import CartWidget from "./CartWidget";
+import { Link } from 'react-router-dom';
 
 const NavBar = () =>
 {return(
     <>
     <header>
-        <nav className="navbar navbar-expand-lg bg-light">
+        <nav className="navbar navbar-expand-lg bg-light stiloLetra">
             <div className="container-fluid">
                 <CartWidget />
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -13,23 +14,34 @@ const NavBar = () =>
                 <div className="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul className="navbar-nav">
                     <li className="nav-item">
-                    <a className="nav-link active" aria-current="page" href="#">Home</a>
+                    <Link to ="/">
+                        <div className="nav-link active" aria-current="page">Todos</div>
+                    </Link> 
                     </li>
                     <li className="nav-item">
-                    <a className="nav-link" href="#">Productos</a>
-                    </li>
-                    <li className="nav-item">
-                    <a className="nav-link" href="#">Nosotros</a>
+                    <Link to ="/category/6">
+                        <div className="nav-link active" aria-current="page">Con Disfras</div>
+                    </Link> 
                     </li>
                     <li className="nav-item dropdown">
-                    <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Extras
-                    </a>
-                    <ul className="dropdown-menu">
-                        <li><a className="dropdown-item" href="#">Extra Action</a></li>
-                        <li><a className="dropdown-item" href="#">Extra Another action</a></li>
-                        <li><a className="dropdown-item" href="#">Extra Something else here</a></li>
-                    </ul>
+                        <div className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Por Tipo</div>
+                            <ul className="dropdown-menu">
+                                <Link to ="/category/4">
+                                    <div className="nav-link active" aria-current="page">Tipo Agua</div>
+                                </Link>
+                                <Link to ="/category/2">
+                                    <div className="nav-link active" aria-current="page">Tipo Electrico</div>
+                                </Link>
+                                <Link to ="/category/5">
+                                    <div className="nav-link active" aria-current="page">Tipo Fuego</div>
+                                </Link>
+                                <Link to ="/category/1">
+                                    <div className="nav-link active" aria-current="page">Tipo Normal</div>
+                                </Link>
+                                <Link to ="/category/3">
+                                    <div className="nav-link active" aria-current="page">Tipo Planta</div>
+                                </Link>
+                            </ul>
                     </li>
                 </ul>
                 </div>
