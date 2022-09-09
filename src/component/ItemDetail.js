@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const ItemDetail = ({item})=>
 {
-    const [count, setCount] = useState(1);
+    const [count, setCount] = useState(0);
 
     const onAdd = (info) =>
     {
@@ -21,7 +21,7 @@ const ItemDetail = ({item})=>
                 <p >Descripcion: {item.description}</p>
             </div> 
             {            
-                count === 1
+                count === 0
                 ?<ItemCount ini={count} stock={item.stock} onAdd={onAdd}/>
                 :<Link to='/cart' style={{textDecoration: "none"}} >
                     <button type="button" className="btn btn-danger">Ir al Carro</button>
