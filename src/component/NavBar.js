@@ -14,31 +14,31 @@ const NavBar = () =>
                 <div className="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul className="navbar-nav">
                     <li className="nav-item">
-                    <Link to ="/">
+                    <Link to ="/" style={{textDecoration: "none"}} >
                         <div className="nav-link active" aria-current="page">Todos</div>
                     </Link> 
                     </li>
                     <li className="nav-item">
-                    <Link to ="/category/6">
+                    <Link to ="/category/6" style={{textDecoration: "none"}} >
                         <div className="nav-link active" aria-current="page">Con Disfras</div>
                     </Link> 
                     </li>
                     <li className="nav-item dropdown">
                         <div className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Por Tipo</div>
                             <ul className="dropdown-menu">
-                                <Link to ="/category/4">
+                                <Link to ="/category/4" style={{textDecoration: "none"}}  >
                                     <div className="nav-link active" aria-current="page">Tipo Agua</div>
                                 </Link>
-                                <Link to ="/category/2">
+                                <Link to ="/category/2" style={{textDecoration: "none"}} >
                                     <div className="nav-link active" aria-current="page">Tipo Electrico</div>
                                 </Link>
-                                <Link to ="/category/5">
+                                <Link to ="/category/5" style={{textDecoration: "none"}} >
                                     <div className="nav-link active" aria-current="page">Tipo Fuego</div>
                                 </Link>
-                                <Link to ="/category/1">
+                                <Link to ="/category/1" style={{textDecoration: "none"}} >
                                     <div className="nav-link active" aria-current="page">Tipo Normal</div>
                                 </Link>
-                                <Link to ="/category/3">
+                                <Link to ="/category/3" style={{textDecoration: "none"}} >
                                     <div className="nav-link active" aria-current="page">Tipo Planta</div>
                                 </Link>
                             </ul>

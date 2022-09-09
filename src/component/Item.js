@@ -13,7 +13,7 @@ const Item = ({ id, name, stock, cost, description, imgPath}) =>
                 <p >$ {cost} </p>
                 <p >Stock: {stock} </p>
                 <p >Descripcion: {description}</p>
-                <Link to={`/item/${id}`}> Mas info </Link>
+                <Link to={`/item/${id}`} style={{textDecoration: "none"}} > Mas info </Link>
             </div>  
         </>        
     );
