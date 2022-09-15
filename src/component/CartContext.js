@@ -48,8 +48,32 @@ const CartContextProvider = ({children}) =>
         return isIn
     }
 
+    const qtysItems = () =>
+    {
+        let qtys = cartList.map(item => item.qty);
+        return qtys.reduce(((previusValue, currentValue) => previusValue + currentValue), 0)  
+    }
+    
+    const costXItem = (id) =>
+    {
+        let index = cartList.map(item => item.id).indexOf(id)
+        return cartList[index].cost * cartList[index].qty
+    }
+    const costTotal = () =>
+    {
+        let total = cartList.map(item => costXItem(item.id))
+        return total.reduce(((previusValue, currentValue) => previusValue + currentValue), 0)
+    }
+
     return(
-        <CartContext.Provider value={{cartList, addItem, removeItem, clear}}>
+        <CartContext.Provider value={{
+            cartList, 
+            addItem, 
+            removeItem, 
+            clear, qtysItems, 
+            costXItem, 
+            costTotal
+        }}>
             {children}
         </CartContext.Provider>
     );

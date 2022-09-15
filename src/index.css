@@ -50,3 +50,11 @@ code {
   padding: 15px;
   margin: 15px;
 }
+.compra_botones
+{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  padding: 1rem;
+  margin: 1rem;
+}

@@ -11,7 +11,8 @@ const CartDitail = ({id, name, qty, description, imgPath}) => {
             </div>
             <h5>Producto : {name}</h5>
             <h5>Cantidad: {qty} </h5>
-            <button type="button" className="btn btn-dark btn-sm" onClick={() => ctx.removeItem(id)}>X</button>
+            <h5>Costo: ${ctx.costXItem(id)} </h5>
+            <button type="button" className="btn btn-outline-dark btn-sm" onClick={() => ctx.removeItem(id)}>X</button>
         </div>
     );  
 }

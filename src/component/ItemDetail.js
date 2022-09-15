@@ -29,7 +29,7 @@ const ItemDetail = ({item})=>
                 count === 0
                 ?<ItemCount ini={count} stock={item.stock} onAdd={onAdd}/>
                 :<Link to='/cart' style={{textDecoration: "none"}} >
-                    <button type="button" className="btn btn-danger">Comprar</button>
+                    <button type="button" className="btn btn-danger btn-lg">Ir al Carro</button>
                 </Link>
             }
         </>        
