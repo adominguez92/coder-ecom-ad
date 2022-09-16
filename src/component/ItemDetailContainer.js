@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import itemCall  from "../utils/itemCall"
 import ItemDetail from "./ItemDetail";
 import { useParams } from "react-router-dom";
-const { itemData } = require("../utils/itemData")
+import { firestoreFetchOnlyDoc } from "../utils/firebaseConfig";
+
 
 const ItemDetailContainer = ()=>
 {
@@ -11,9 +11,9 @@ const ItemDetailContainer = ()=>
 
     useEffect(() =>
     {
-        itemCall(itemData.find(item => item.id === id))
+        firestoreFetchOnlyDoc(id)
             .then(result => setProduct(result))
-            .catch(err => console.log(err))
+            
     }, [id]);
 
     return(

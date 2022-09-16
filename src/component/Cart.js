@@ -25,9 +25,6 @@ const Cart = () => {
                     )
                     )     
                 }
-                {
-                    console.log("Costo "+ costTotal + " Cantidad " +cantidadItem)
-                }
                 <h5>Costo Tolta: ${costTotal} </h5>
                 <h5>Cantidad de articulos: {cantidadItem} </h5>    
                 <section className="compra_botones">

@@ -11,7 +11,7 @@ export const itemData = [
         cost:"1600",
         description:"Peluche de Picachu",
         img:[
-            "https://cdn.grupoelcorteingles.es/SGFM/dctm/MEDIA03/202111/18/00108341137001____1__640x640.jpg"
+            "https://res.cloudinary.com/none-img/image/upload/v1663341518/Peluches/pika_mfzfuu.jpg"
         ]
     },
     {
@@ -26,7 +26,7 @@ export const itemData = [
         cost:"3000",
         description:"Peluche de Picachu disfrazado de charizard",
         img:[
-            "https://http2.mlstatic.com/D_NQ_NP_645170-MCO44339465449_122020-O.jpg"
+            "https://res.cloudinary.com/none-img/image/upload/v1663341517/Peluches/pika_disf_wa1bvb.jpg"
         ]
     },
     {
@@ -41,7 +41,7 @@ export const itemData = [
         cost:"1600",
         description:"Peluche de Eevee",
         img:[
-            "https://http2.mlstatic.com/D_NQ_NP_665373-MLU31242832284_062019-O.jpg"
+            "https://res.cloudinary.com/none-img/image/upload/v1663341518/Peluches/eevee_z4p8at.jpg"
         ]
     },
     {
@@ -56,7 +56,7 @@ export const itemData = [
         cost:"3000",
         description:"Peluche de Eevee disfrazado de Umbreon",
         img:[
-            "https://http2.mlstatic.com/D_NQ_NP_744967-MLM44909518043_022021-O.jpg"
+            "https://res.cloudinary.com/none-img/image/upload/v1663341517/Peluches/eevee_disf_ivtqtc.jpg"
         ]
     },
     {
@@ -71,7 +71,7 @@ export const itemData = [
         cost:"4500",
         description:"Peluche Snorlax gigante",
         img:[
-            "https://images-na.ssl-images-amazon.com/images/I/819L3YNycaL.jpg"
+            "https://res.cloudinary.com/none-img/image/upload/v1663341518/Peluches/snorlax_t3yaow.jpg"
         ]
     },
     {
@@ -86,7 +86,7 @@ export const itemData = [
         cost:"1000",
         description:"Peluche Bulbasaur",
         img:[
-            "https://http2.mlstatic.com/D_NQ_NP_973794-MLA49514183039_032022-V.jpg"
+            "https://res.cloudinary.com/none-img/image/upload/v1663341517/Peluches/bulva_inhmeu.jpg"
         ]
     },
     {
@@ -101,7 +101,7 @@ export const itemData = [
         cost:"1000",
         description:"Peluche Squirtle",
         img:[
-            "https://mostlygames.com.ar/wp-content/uploads/2020/03/squirtle.jpg"
+            "https://res.cloudinary.com/none-img/image/upload/v1663341518/Peluches/squirt_ebwohr.jpg"
         ]
     },
     {
@@ -116,7 +116,7 @@ export const itemData = [
         cost:"1000",
         description:"Peluche Charmander",
         img:[
-            "https://http2.mlstatic.com/D_NQ_NP_699729-MLU46377507043_062021-O.jpg"
+            "https://res.cloudinary.com/none-img/image/upload/v1663341517/Peluches/char_e3u0ey.jpg"
         ]
     },
     {
@@ -131,7 +131,7 @@ export const itemData = [
         cost:"2200",
         description:"Peluche Charizard Y",
         img:[
-            "https://http2.mlstatic.com/D_NQ_NP_980959-MLU48637687844_122021-V.jpg"
+            "https://res.cloudinary.com/none-img/image/upload/v1663341518/Peluches/charY_fxzkhx.jpg"
         ]
     },
     {
@@ -146,7 +146,7 @@ export const itemData = [
         cost:"2250",
         description:"Peluche Charizard X",
         img:[
-            "https://http2.mlstatic.com/D_NQ_NP_891719-MLU31242090435_062019-O.jpg"
+            "https://res.cloudinary.com/none-img/image/upload/v1663341517/Peluches/charX_hwvmsz.jpg"
         ]
     }
 ];
