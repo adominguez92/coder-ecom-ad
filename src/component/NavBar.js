@@ -20,7 +20,7 @@ const NavBar = () =>
                     </li>
                     <li className="nav-item">
                     <Link to ="/category/6" style={{textDecoration: "none"}} >
-                        <div className="nav-link active" aria-current="page">Con Disfras</div>
+                        <div className="nav-link active" aria-current="page">Con Disfraz</div>
                     </Link> 
                     </li>
                     <li className="nav-item dropdown">
