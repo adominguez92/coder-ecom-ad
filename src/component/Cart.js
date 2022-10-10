@@ -3,7 +3,6 @@ import { CartContext } from "./CartContext";
 import CartDitail from "./CartDitail";
 import { Link } from 'react-router-dom';
 import { collection, serverTimestamp, doc, setDoc, updateDoc, increment } from "firebase/firestore";
-//import { async } from "@firebase/util";
 import { db } from "../utils/firebaseConfig";
 
 
@@ -76,7 +75,21 @@ const Cart = () => {
                     )     
                 }
                 <h5>Costo Tolta: ${costTotal} </h5>
-                <h5>Cantidad de articulos: {cantidadItem} </h5>    
+                <h5>Cantidad de articulos: {cantidadItem} </h5>   
+                <form> 
+                    <input 
+                        type="text" 
+                        placeholder="nombre"
+                        className="nombreForm"></input>
+                    <input 
+                        type="email" 
+                        placeholder="email"
+                        className="emailForm"></input>
+                    <input 
+                        type="text" 
+                        placeholder="telefono"
+                        className="telefonoForm"></input>
+                </form>
                 <section className="compra_botones">
                     <button type="button" className="btn btn-outline-success btn-lg" onClick={createOrder}>Comprar</button>
                     <button type="button" className="btn btn-outline-danger btn-lg" onClick={ctx.clear}>Borrar Carrito</button>
