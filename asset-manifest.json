@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/coder-ecom-ad/static/css/main.85da2c87.css",
+    "main.js": "/coder-ecom-ad/static/js/main.932effba.js",
+    "static/media/logo.ico": "/coder-ecom-ad/static/media/logo.9e1cc3a6ef72fca00cca.ico",
+    "index.html": "/coder-ecom-ad/index.html",
+    "main.85da2c87.css.map": "/coder-ecom-ad/static/css/main.85da2c87.css.map",
+    "main.932effba.js.map": "/coder-ecom-ad/static/js/main.932effba.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.85da2c87.css",
+    "static/js/main.932effba.js"
+  ]
+}
