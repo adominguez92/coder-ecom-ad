@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { CartContext } from "./CartContext";
 import CartDitail from "./CartDitail";
 import { Link } from 'react-router-dom';
@@ -10,6 +10,19 @@ const Cart = () => {
     const ctx = useContext(CartContext);
     let costTotal = ctx.costTotal();
     let cantidadItem = ctx.qtysItems();
+    const [nombre, setNombre] = useState();
+    const [mail, setMail] = useState();
+    const [tel, setTel] = useState();
+    
+    const ingresoNombre =  (event) =>{
+        setNombre(event.target.value)
+    }
+    const ingresoMail =  (event) =>{        
+        setMail(event.target.value)
+    }
+    const ingresoTel =  (event) =>{
+        setTel(event.target.value)
+    }
 
     const createOrder =  () => {
         let itemFromBD = ctx.cartList.map(item=> ({
@@ -21,9 +34,9 @@ const Cart = () => {
         )
         let order = {
             buyer:{
-                name: "C2",
-                email: "e@mail1.com",
-                phone: "000000001"
+                name: nombre,
+                email: mail,
+                phone: tel
             },
             item: itemFromBD,
             date: serverTimestamp(),
@@ -76,19 +89,25 @@ const Cart = () => {
                 }
                 <h5>Costo Tolta: ${costTotal} </h5>
                 <h5>Cantidad de articulos: {cantidadItem} </h5>   
-                <form> 
+                <form className="fromulario"> 
                     <input 
                         type="text" 
                         placeholder="nombre"
-                        className="nombreForm"></input>
+                        className="nombreForm"
+                        name="nombre"
+                        onChange={ingresoNombre}></input>
                     <input 
                         type="email" 
                         placeholder="email"
-                        className="emailForm"></input>
+                        className="emailForm"
+                        name="mail"
+                        onChange={ingresoMail}></input>
                     <input 
                         type="text" 
                         placeholder="telefono"
-                        className="telefonoForm"></input>
+                        className="telefonoForm"
+                        name="tel"
+                        onChange={ingresoTel}></input>
                 </form>
                 <section className="compra_botones">
                     <button type="button" className="btn btn-outline-success btn-lg" onClick={createOrder}>Comprar</button>
